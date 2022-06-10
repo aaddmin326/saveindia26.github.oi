@@ -1,0 +1,122 @@
+@media (max-width: 900px){
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left:-100%;
+        background: rgb(36, 33, 33);
+        height: 1000px;
+        width: 125px;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ul{
+        left: 0px;
+
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: cyan;
+        background: none;
+    }
+    html{
+        width:550px;
+        height: 1283px;
+    }
+    body{
+        background-image: url("1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1282px;
+       
+    }
+    main .par{
+        width: 400px;
+        height: auto;
+        text-align: justify;
+    }
+    main .form{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 826px;
+    left: 200px;
+        
+    }
+}
+@media (max-width: 890px){
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    nav ul{
+        position:fixed;
+        top: 80px;
+        left:-100%;
+        background: rgb(36, 33, 33);
+        height: 1000px;
+        width: 125px;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        overflow:none;
+    }
+    #click:checked ~ul{
+        left: 0px;
+        
+
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: cyan;
+        background: none;
+    }
+    body{
+        height: 1200px;
+        width: 100%;
+        background-image: url("Gallary/back1.jpg");
+        background-size: cover;
+    }
+    
+    .main{
+        width:100%;
+        height: auto;
+        text-align: justify;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        
+    }
+    .par{
+        width:600px
+    }
+    .center{
+        margin-top: 89%;
+        margin-left:-40%;
+    }
+
+}

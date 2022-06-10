@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+}
+nav{
+    
+    height: 75px;
+    background: rgb(43, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+  
+}
+
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background-color: rgb(104, 118, 128);
+    font-weight: bold;
+}
+nav .menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media(max-width: 1274px){
+   
+   body{
+  
+    height: 877px;
+   }
+   
+     .conter{
+       position: relative;
+       top: 60%;
+       left: 50%;
+   }
+   .par{
+       width: 630px;
+   }
+
+}
+@media (max-width: 890px){
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    nav ul{
+        position:fixed;
+        top: 80px;
+        left:-100%;
+        background: rgb(36, 33, 33);
+        height: 1000px;
+        width: 125px;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        overflow:none;
+    }
+    #click:checked ~ul{
+        left: 0px;
+        
+
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: cyan;
+        background: none;
+    }
+    body{
+        height: 1299px;
+        width: 100%;
+        background-image: url("Gallary/back1.jpg");
+        background-size: cover;
+    }
+    
+    .main{
+        width:100%;
+        height: auto;
+        text-align: justify;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        
+    }
+    .par{
+        width:600px
+    }
+    .center{
+        margin-top: 89%;
+        margin-left:-40%;
+    }
+
+}
+.main{
+   
+    background-image: url("Gallary/back1.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    height: 780px;
+    margin-top: 0%;
+    padding-bottom: 100px;
+}
+.content{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 48px;
+    padding-bottom: 38px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 130px;
+    padding-top: 130px;
+    margin-top:0%
+   /* latter-spacing: 2px; */
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    
+    margin-bottom: 10px;
+    margin-left: 130px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+    
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px
+}
+.center{
+    position:absolute;
+    top:07%;
+    left: 65%;
+    background-color: #4c5454;
+    border-radius: 20px;
+    width: 302px;
+    height: 588px;
+    }
+    .center h1{
+        left: 100px;
+        top: 12px;
+        position: absolute;
+        text-align: center;
+        padding: 0 0 20 0;
+        border-bottom: 1px solid silver;
+    }
+    .center form{
+         padding: 0 40px;
+         box-sizing: border-box;
+    }
+    form .txt_field{
+        position: relative ;
+        top: 50px;
+        border-bottom: 2px solid #adadad;
+        margin: 30px 0;
+    }
+    .txt_field input{
+        width: 100%;
+        padding: 0 5px;
+        height: 40px;
+        font-size: 16px;
+        border: none;
+        background: none;
+        outline: none;
+    }
+    .txt_field label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        color: #adadad;
+        transform: translateY(-50%);
+        font-size: 16px;
+        pointer-events: none;
+        transition: .5s;
+    }
+    .txt_field .demo{
+       position: absolute;
+       top: 30px;
+    }
+    select{
+        position:relative;
+        top:40px;
+        border: none;
+        background: none;
+    }
+    .txt_field span::before{
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: #2691d9; 
+    }
+    .txt_field input:focus ~ label,
+    .txt_field input:valid ~ label{
+        top: -5px;
+        color: #2691d9;
+    }
+    .txt_field input:focus ~ span::before,
+    .contant .txt_field input:valid ~ span::before{
+       width: 100%; 
+    
+    }
+    
+    
+    input[type="submit"]{
+        margin-top: 50px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid;
+        border-radius: 24px;
+        font-size: 18px;
+        color: #395f77;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+    
+    }
+    input[type="submit"]:hover{
+        border-color: #2691d9;
+        background: #c8c664;
+        transition: .5s;
+    }
+    .center .close-btn{
+        position: absolute;
+        margin-top: 10px;
+        padding-left: 270px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    } 
+    .center .close-btn:hover{
+        color: #dd253a;
+    }
+    .par{
+        color: #c8c664;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
